@@ -17,7 +17,7 @@ function Counter() {
 
     return (
         <div>
-            <h1>Count:{count}</h1>
+            <h1 className='p-4 bg-accent text-base-200'> Count : {count}</h1>
             <button onClick={increaseCount}>Increase Count(+)</button>
             <button onClick={decreaseCount}>Decrease Count(-)</button>
         </div>
