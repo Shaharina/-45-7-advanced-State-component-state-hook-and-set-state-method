@@ -5,6 +5,15 @@ function App() {
     return <div className='App'></div>;
 }
 
+function ExternalUsers() {
+    const [uders, setUsers] = usestate([]);
+    useEffect(() => {
+        fetch('https://jsonplaceholder.typicode.com/users')
+            .then(res => res.json())
+            .then(data => console.js());
+    }, []);
+}
+
 // function App() {
 //     return (
 //         <div className='App'>
